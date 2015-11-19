@@ -9,19 +9,24 @@
     "pub/sub",
     "post-box"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "https://github.com/digitzfone/aurelia-post-box",
   "bugs": {
-    "url": "https://github.com/aurelia/event-aggregator/issues"
+    "url": "https://github.com/digitzfone/aurelia-post-box/issues"
   },
   "license": "MIT",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
-  "main": "dist/commonjs/aurelia-event-aggregator.js",
+  "author": "Eric Johnson <ericj@singledigit.net> (https://github.com/digitzfone)",
+  "main": "dist/commonjs/aurelia-post-box.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/event-aggregator"
+    "url": "https://github.com/digitzfone/aurelia-post-box"
   },
   "jspmNodeConversion": false,
   "jspm": {
+    "main": "aurelia-post-box",
+    "format": "amd",
+    "directories": {
+      "lib": "dist/amd"
+    },
     "dependencies": {
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1"
     },
@@ -29,6 +34,38 @@
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "aurelia-tools": "^0.1.12",
+    "babel-dts-generator": "^0.2.17",
+    "babel-eslint": "^4.1.1",
+    "conventional-changelog": "0.0.11",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-babel": "^5.2.1",
+    "gulp-bump": "^0.3.1",
+    "gulp-eslint": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-typedoc": "^1.2.1",
+    "gulp-typedoc-extractor": "^0.0.8",
+    "jasmine-core": "^2.1.3",
+    "karma": "^0.13.15",
+    "karma-babel-preprocessor": "^5.2.2",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.3.1",
+    "karma-jasmine": "^0.3.5",
+    "karma-jspm": "^2.0.1",
+    "object.assign": "^1.0.3",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "vinyl": "^0.5.1",
+    "vinyl-paths": "^1.0.0",
+    "yargs": "^2.1.1"
+  },
+  "aurelia": {
+    "documentation": {
+      "articles": []
     }
   }
 }
