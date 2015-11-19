@@ -1,4 +1,4 @@
-System.register(['aurelia-event-aggregator', 'storage'], function (_export) {
+System.register(['aurelia-event-aggregator', './storage'], function (_export) {
     'use strict';
 
     var EventAggregator, Storage, PostBox;

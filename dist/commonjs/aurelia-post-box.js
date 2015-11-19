@@ -6,7 +6,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var _aureliaEventAggregator = require('aurelia-event-aggregator');
 
-var _storage = require('storage');
+var _storage = require('./storage');
 
 var PostBox = (function () {
     function PostBox() {

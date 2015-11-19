@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-event-aggregator', 'storage'], function (exports, _aureliaEventAggregator, _storage) {
+define(['exports', 'aurelia-event-aggregator', './storage'], function (exports, _aureliaEventAggregator, _storage) {
     'use strict';
 
     exports.__esModule = true;
