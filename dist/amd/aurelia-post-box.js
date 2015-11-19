@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-event-aggregator', './storage'], function (exports, _aureliaEventAggregator, _storage) {
+define(['exports', 'aurelia-event-aggregator', 'storage'], function (exports, _aureliaEventAggregator, _storage) {
     'use strict';
 
     exports.__esModule = true;
@@ -28,8 +28,8 @@ define(['exports', 'aurelia-event-aggregator', './storage'], function (exports, 
         PostBox.prototype.publish = function publish(topic, value) {
             var local = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
-            var skipStorage = topic.startsWith("temp"),
-                isLocal = local || topic.startsWith("local");
+            var skipStorage = topic.startsWith('temp'),
+                isLocal = local || topic.startsWith('local');
 
             if (!skipStorage) {
                 this.storage.saveTopic(topic, value, isLocal);

@@ -6,7 +6,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var _aureliaEventAggregator = require('aurelia-event-aggregator');
 
-var _storage = require('./storage');
+var _storage = require('storage');
 
 var PostBox = (function () {
     function PostBox() {
@@ -31,8 +31,8 @@ var PostBox = (function () {
     PostBox.prototype.publish = function publish(topic, value) {
         var local = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
-        var skipStorage = topic.startsWith("temp"),
-            isLocal = local || topic.startsWith("local");
+        var skipStorage = topic.startsWith('temp'),
+            isLocal = local || topic.startsWith('local');
 
         if (!skipStorage) {
             this.storage.saveTopic(topic, value, isLocal);

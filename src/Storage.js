@@ -3,9 +3,8 @@
  */
 
 export class Storage {
-    persistedTopics = {};
-
     constructor() {
+        this.persistedTopics = {};
         this.storage = window.localStorage;
         this.session = window.sessionStorage;
 

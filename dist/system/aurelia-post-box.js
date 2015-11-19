@@ -1,4 +1,4 @@
-System.register(['aurelia-event-aggregator', './storage'], function (_export) {
+System.register(['aurelia-event-aggregator', 'storage'], function (_export) {
     'use strict';
 
     var EventAggregator, Storage, PostBox;
@@ -35,8 +35,8 @@ System.register(['aurelia-event-aggregator', './storage'], function (_export) {
                 PostBox.prototype.publish = function publish(topic, value) {
                     var local = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
-                    var skipStorage = topic.startsWith("temp"),
-                        isLocal = local || topic.startsWith("local");
+                    var skipStorage = topic.startsWith('temp'),
+                        isLocal = local || topic.startsWith('local');
 
                     if (!skipStorage) {
                         this.storage.saveTopic(topic, value, isLocal);

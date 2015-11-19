@@ -2,8 +2,9 @@
  * Created by ericjohnson on 11/19/15.
  */
 
+
 import {EventAggregator} from 'aurelia-event-aggregator';
-import {Storage} from './storage';
+import {Storage} from 'storage';
 
 export class PostBox{
     constructor(){
@@ -25,8 +26,8 @@ export class PostBox{
     }
 
     publish(topic, value, local = false) {
-        let skipStorage = topic.startsWith("temp"),
-            isLocal = local || topic.startsWith("local");
+        let skipStorage = topic.startsWith('temp'),
+            isLocal = local || topic.startsWith('local');
 
         if(!skipStorage) {
             // store latest value in library
