@@ -15,7 +15,7 @@ System.config({
 
   map: {
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1",
-    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.3",
+    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.4",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
