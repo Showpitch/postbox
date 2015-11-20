@@ -1,4 +1,4 @@
-System.register(['aurelia-event-aggregator', './storage'], function (_export) {
+System.register(['aurelia-event-aggregator', 'aurelia-storage'], function (_export) {
     'use strict';
 
     var EventAggregator, Storage, PostBox;
@@ -8,8 +8,8 @@ System.register(['aurelia-event-aggregator', './storage'], function (_export) {
     return {
         setters: [function (_aureliaEventAggregator) {
             EventAggregator = _aureliaEventAggregator.EventAggregator;
-        }, function (_storage) {
-            Storage = _storage.Storage;
+        }, function (_aureliaStorage) {
+            Storage = _aureliaStorage.Storage;
         }],
         execute: function () {
             PostBox = (function () {

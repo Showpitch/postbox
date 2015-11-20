@@ -7,6 +7,7 @@
 ## Dependencies
 
 * [aurelia-event-aggregator](https://github.com/aurelia/event-aggregator)
+* [aurelia-storage](https://github.com/digitzfone/aurelia-storage)
 
 ## Used By
 

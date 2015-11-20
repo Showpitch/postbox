@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-event-aggregator', './storage'], function (exports, _aureliaEventAggregator, _storage) {
+define(['exports', 'aurelia-event-aggregator', 'aurelia-storage'], function (exports, _aureliaEventAggregator, _aureliaStorage) {
     'use strict';
 
     exports.__esModule = true;
@@ -10,7 +10,7 @@ define(['exports', 'aurelia-event-aggregator', './storage'], function (exports, 
             _classCallCheck(this, PostBox);
 
             this.eventAggregator = new _aureliaEventAggregator.EventAggregator();
-            this.storage = new _storage.Storage();
+            this.storage = new _aureliaStorage.Storage();
         }
 
         PostBox.prototype.subscribe = function subscribe(topic, callback) {

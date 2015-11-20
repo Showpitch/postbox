@@ -4,7 +4,7 @@
 
 
 import {EventAggregator} from 'aurelia-event-aggregator';
-import {Storage} from './storage';
+import {Storage} from 'aurelia-storage';
 
 export class PostBox{
     constructor(){

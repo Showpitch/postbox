@@ -6,14 +6,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var _aureliaEventAggregator = require('aurelia-event-aggregator');
 
-var _storage = require('./storage');
+var _aureliaStorage = require('aurelia-storage');
 
 var PostBox = (function () {
     function PostBox() {
         _classCallCheck(this, PostBox);
 
         this.eventAggregator = new _aureliaEventAggregator.EventAggregator();
-        this.storage = new _storage.Storage();
+        this.storage = new _aureliaStorage.Storage();
     }
 
     PostBox.prototype.subscribe = function subscribe(topic, callback) {
