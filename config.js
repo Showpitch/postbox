@@ -15,11 +15,11 @@ System.config({
 
   map: {
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1",
-    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.5",
+    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.6",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
-    "github:digitzfone/aurelia-storage@0.0.5": {
+    "github:digitzfone/aurelia-storage@0.0.6": {
       "moment": "npm:moment@2.10.6"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
