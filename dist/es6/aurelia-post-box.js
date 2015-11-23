@@ -16,7 +16,7 @@ export class PostBox{
 
         // if 'getLatestValue' call callback with latest value
         if (getLatestValue) {
-            callback(this.storage.retrieveTopic(topic));
+            callback(this.storage.retrieve(topic));
         }
 
         // subscribe to topic and return unsubscribe option
@@ -31,7 +31,7 @@ export class PostBox{
 
         if(!skipStorage) {
             // store latest value in library
-            this.storage.saveTopic(topic, value, isLocal);
+            this.storage.store(topic, value, !isLocal);
         }
 
         // publish topic
@@ -44,6 +44,6 @@ export class PostBox{
         this.eventAggregator.publish(topic, undefined);
 
         // delete topic from library
-        this.storage.deleteTopic(topic);
+        this.storage.remove(topic);
     }
 }

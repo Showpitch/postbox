@@ -24,7 +24,7 @@ System.register(['aurelia-event-aggregator', 'aurelia-storage'], function (_expo
                     var getLatestValue = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
                     if (getLatestValue) {
-                        callback(this.storage.retrieveTopic(topic));
+                        callback(this.storage.retrieve(topic));
                     }
 
                     return this.eventAggregator.subscribe(topic, function (payload) {
@@ -39,7 +39,7 @@ System.register(['aurelia-event-aggregator', 'aurelia-storage'], function (_expo
                         isLocal = local || topic.startsWith('local');
 
                     if (!skipStorage) {
-                        this.storage.saveTopic(topic, value, isLocal);
+                        this.storage.store(topic, value, !isLocal);
                     }
 
                     return this.eventAggregator.publish(topic, value);
@@ -48,7 +48,7 @@ System.register(['aurelia-event-aggregator', 'aurelia-storage'], function (_expo
                 PostBox.prototype.clear = function clear(topic) {
                     this.eventAggregator.publish(topic, undefined);
 
-                    this.storage.deleteTopic(topic);
+                    this.storage.remove(topic);
                 };
 
                 return PostBox;

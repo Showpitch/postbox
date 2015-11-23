@@ -15,10 +15,13 @@ System.config({
 
   map: {
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1",
-    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.4",
+    "aurelia-storage": "github:digitzfone/aurelia-storage@0.0.5",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "github:digitzfone/aurelia-storage@0.0.5": {
+      "moment": "npm:moment@2.10.6"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -48,6 +51,9 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:moment@2.10.6": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"

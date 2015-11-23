@@ -17,7 +17,7 @@ define(['exports', 'aurelia-event-aggregator', 'aurelia-storage'], function (exp
             var getLatestValue = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
             if (getLatestValue) {
-                callback(this.storage.retrieveTopic(topic));
+                callback(this.storage.retrieve(topic));
             }
 
             return this.eventAggregator.subscribe(topic, function (payload) {
@@ -32,7 +32,7 @@ define(['exports', 'aurelia-event-aggregator', 'aurelia-storage'], function (exp
                 isLocal = local || topic.startsWith('local');
 
             if (!skipStorage) {
-                this.storage.saveTopic(topic, value, isLocal);
+                this.storage.store(topic, value, !isLocal);
             }
 
             return this.eventAggregator.publish(topic, value);
@@ -41,7 +41,7 @@ define(['exports', 'aurelia-event-aggregator', 'aurelia-storage'], function (exp
         PostBox.prototype.clear = function clear(topic) {
             this.eventAggregator.publish(topic, undefined);
 
-            this.storage.deleteTopic(topic);
+            this.storage.remove(topic);
         };
 
         return PostBox;
