@@ -35,7 +35,7 @@ var PostBox = (function () {
             isLocal = local || topic.startsWith('local');
 
         if (!skipStorage) {
-            this.storage.store(topic, value, !isLocal);
+            this.storage.store(topic, value, null, !isLocal);
         }
 
         return this.eventAggregator.publish(topic, value);

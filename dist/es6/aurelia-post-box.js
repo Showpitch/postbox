@@ -31,7 +31,7 @@ export class PostBox{
 
         if(!skipStorage) {
             // store latest value in library
-            this.storage.store(topic, value, !isLocal);
+            this.storage.store(topic, value, null, !isLocal);
         }
 
         // publish topic
