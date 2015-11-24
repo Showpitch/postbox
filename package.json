@@ -1,6 +1,6 @@
 {
   "name": "aurelia-post-box",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A wrapper and enhancement for Aurelia's event aggregator",
   "keywords": [
     "aurelia",
@@ -29,7 +29,7 @@
     },
     "dependencies": {
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1",
-      "aurelia-storage": "github:digitzfone/aurelia-storage@^0.0.6"
+      "aurelia-storage": "github:digitzfone/aurelia-storage@^0.0.7"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
