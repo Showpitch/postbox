@@ -1,6 +1,6 @@
 {
-  "name": "aurelia-post-box",
-  "version": "0.0.15",
+  "name": "postbox",
+  "version": "0.0.16",
   "description": "A wrapper and enhancement for Aurelia's event aggregator",
   "keywords": [
     "aurelia",
@@ -9,27 +9,27 @@
     "pub/sub",
     "post-box"
   ],
-  "homepage": "https://github.com/digitzfone/aurelia-post-box",
+  "homepage": "https://github.com/Showpitch/postbox",
   "bugs": {
-    "url": "https://github.com/digitzfone/aurelia-post-box/issues"
+    "url": "https://github.com/Showpitch/postbox/issues"
   },
   "license": "MIT",
   "author": "Eric Johnson <ericj@singledigit.net> (https://github.com/digitzfone)",
-  "main": "dist/commonjs/aurelia-post-box.js",
+  "main": "dist/commonjs/postbox.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitzfone/aurelia-post-box"
+    "url": "https://github.com/Showpitch/postbox"
   },
   "jspmNodeConversion": false,
   "jspm": {
-    "main": "aurelia-post-box",
+    "main": "postbox",
     "format": "amd",
     "directories": {
       "lib": "dist/amd"
     },
     "dependencies": {
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1",
-      "aurelia-storage": "github:digitzfone/aurelia-storage@^0.0.7"
+      "storage": "github:Showpitch/storage@^0.0.10"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
