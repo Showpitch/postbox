@@ -29,7 +29,7 @@
     },
     "dependencies": {
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1",
-      "storage": "github:Showpitch/storage@^0.0.11"
+      "storage": "github:Showpitch/storage@^0.1.1"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
