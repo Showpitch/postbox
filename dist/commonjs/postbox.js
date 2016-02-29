@@ -29,12 +29,13 @@ var PostBox = (function () {
   };
 
   PostBox.prototype.publish = function publish(topic, value) {
-    var local = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
+    var session = arguments.length <= 2 || arguments[2] === undefined ? true : arguments[2];
+    var expiration = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
 
     var skipStorage = topic.startsWith('temp'),
-        isLocal = local || topic.startsWith('local');
+        useSession = session || !topic.startsWith('local');
     if (!skipStorage) {
-      this.storage.store(topic, value, undefined, !isLocal);
+      this.storage.store(topic, value, expiration, useSession);
     }
 
     return this.eventAggregator.publish(topic, value);

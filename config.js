@@ -13,13 +13,13 @@ System.config({
   },
 
   map: {
-    "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.1.0",
+    "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.1.1",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
-    "storage": "github:Showpitch/storage@0.0.10",
-    "github:Showpitch/storage@0.0.10": {
-      "moment": "npm:moment@2.11.1"
+    "storage": "github:Showpitch/storage@0.0.11",
+    "github:Showpitch/storage@0.0.11": {
+      "moment": "npm:moment@2.11.2"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -36,7 +36,7 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:aurelia-event-aggregator@1.0.0-beta.1.1.0": {
+    "npm:aurelia-event-aggregator@1.0.0-beta.1.1.1": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.1.1"
     },
     "npm:babel-runtime@5.8.35": {
@@ -51,7 +51,7 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:moment@2.11.1": {
+    "npm:moment@2.11.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:path-browserify@0.0.0": {

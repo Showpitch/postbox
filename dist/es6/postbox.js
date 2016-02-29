@@ -21,12 +21,12 @@ export class PostBox {
     })
   }
 
-  publish(topic, value, local = false) {
+  publish(topic, value, session = true, expiration = null) {
     let skipStorage = topic.startsWith('temp'),
-      isLocal = local || topic.startsWith('local');
+      useSession = session || !topic.startsWith('local');
     if (!skipStorage) {
       // store latest value in library
-      this.storage.store(topic, value, undefined, !isLocal);
+      this.storage.store(topic, value, expiration, useSession);
     }
     // publish topic
     return this.eventAggregator.publish(topic, value);

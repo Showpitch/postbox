@@ -8,7 +8,7 @@ declare module 'postbox' {
   export class PostBox {
     constructor();
     subscribe(topic: any, callback: any, getLatestValue?: any): any;
-    publish(topic: any, value: any, local?: any): any;
+    publish(topic: any, value: any, session?: any, expiration?: any): any;
     clear(topic: any): any;
   }
 }
