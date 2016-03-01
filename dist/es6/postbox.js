@@ -23,7 +23,7 @@ export class PostBox {
 
   publish(topic, value, session = true, expiration = null) {
     let skipStorage = topic.startsWith('temp'),
-      useSession = session || !topic.startsWith('local');
+      useSession = session && !topic.startsWith('local');
     if (!skipStorage) {
       // store latest value in library
       this.storage.store(topic, value, expiration, useSession);

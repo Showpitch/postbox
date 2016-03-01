@@ -37,7 +37,7 @@ System.register(['aurelia-event-aggregator', 'storage'], function (_export) {
           var expiration = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
 
           var skipStorage = topic.startsWith('temp'),
-              useSession = session || !topic.startsWith('local');
+              useSession = session && !topic.startsWith('local');
           if (!skipStorage) {
             this.storage.store(topic, value, expiration, useSession);
           }
