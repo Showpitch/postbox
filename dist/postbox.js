@@ -21,7 +21,7 @@ export class PostBox {
     })
   }
 
-  publish(topic, value, session = true, expiration = null) {
+  publish(topic, value, session = true, expiration = undefined) {
     let skipStorage = topic.startsWith('temp'),
       useSession = session && !topic.startsWith('local');
     if (!skipStorage) {

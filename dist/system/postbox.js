@@ -34,7 +34,7 @@ System.register(['aurelia-event-aggregator', 'storage'], function (_export) {
 
         PostBox.prototype.publish = function publish(topic, value) {
           var session = arguments.length <= 2 || arguments[2] === undefined ? true : arguments[2];
-          var expiration = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
+          var expiration = arguments.length <= 3 || arguments[3] === undefined ? undefined : arguments[3];
 
           var skipStorage = topic.startsWith('temp'),
               useSession = session && !topic.startsWith('local');
