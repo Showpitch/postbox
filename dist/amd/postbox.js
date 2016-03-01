@@ -32,7 +32,7 @@ define(['exports', 'aurelia-event-aggregator', 'storage'], function (exports, _a
       var skipStorage = topic.startsWith('temp'),
           useSession = session && !topic.startsWith('local');
       if (!skipStorage) {
-        this.storage.store(topic, value, expiration, useSession);
+        this.storage.store(topic, value, useSession, expiration);
       }
 
       return this.eventAggregator.publish(topic, value);

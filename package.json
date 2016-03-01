@@ -1,6 +1,6 @@
 {
   "name": "postbox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A wrapper and enhancement for Aurelia's event aggregator",
   "keywords": [
     "aurelia",

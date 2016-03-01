@@ -26,7 +26,7 @@ export class PostBox {
       useSession = session && !topic.startsWith('local');
     if (!skipStorage) {
       // store latest value in library
-      this.storage.store(topic, value, expiration, useSession);
+      this.storage.store(topic, value, useSession, expiration);
     }
     // publish topic
     return this.eventAggregator.publish(topic, value);
