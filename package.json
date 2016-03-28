@@ -1,6 +1,6 @@
 {
   "name": "postbox",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A wrapper and enhancement for Aurelia's event aggregator",
   "keywords": [
     "aurelia",
@@ -69,5 +69,9 @@
     "documentation": {
       "articles": []
     }
+  },
+  "dependencies": {
+    "aurelia-event-aggregator": "^1.0.0-beta.1.2.0",
+    "storage": "git+https://github.com/Showpitch/storage.git"
   }
 }
