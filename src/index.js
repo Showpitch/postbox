@@ -10,7 +10,6 @@ export class PostBox {
   }
 
   subscribe(topic, callback, getLatestValue = false) {
-
     // if 'getLatestValue' call callback with latest value
     if (getLatestValue) {
       callback(this.storage.retrieve(topic));
@@ -18,12 +17,12 @@ export class PostBox {
     // subscribe to topic and return unsubscribe option
     return this.eventAggregator.subscribe(topic, payload => {
       callback(payload);
-    })
+    });
   }
 
   publish(topic, value, session = true, expiration = undefined) {
-    let skipStorage = topic.startsWith('temp'),
-      useSession = session && !topic.startsWith('local');
+    let skipStorage = topic.startsWith('temp');
+    let useSession = session && !topic.startsWith('local');
     if (!skipStorage) {
       // store latest value in library
       this.storage.store(topic, value, useSession, expiration);
@@ -33,7 +32,6 @@ export class PostBox {
   }
 
   clear(topic) {
-
     // publish the empty value
     this.eventAggregator.publish(topic, undefined);
     // delete topic from library
