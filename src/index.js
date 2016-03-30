@@ -2,7 +2,7 @@
  * Created by ericjohnson on 11/19/15.
  */
 import {EventAggregator} from 'aurelia-event-aggregator';
-import {Storage} from 'storage';
+import {Storage} from 'Showpitch/storage';
 export class PostBox {
   constructor() {
     this.eventAggregator = new EventAggregator();
