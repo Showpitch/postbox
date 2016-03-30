@@ -18,8 +18,8 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
-    "storage": "github:Showpitch/storage@0.1.5",
-    "github:Showpitch/storage@0.1.5": {
+    "storage": "github:Showpitch/storage@0.1.8",
+    "github:Showpitch/storage@0.1.8": {
       "moment": "npm:moment@2.12.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
