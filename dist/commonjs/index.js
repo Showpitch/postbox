@@ -7,7 +7,7 @@ exports.PostBox = undefined;
 
 var _aureliaEventAggregator = require('aurelia-event-aggregator');
 
-var _storage = require('Showpitch/storage');
+var _storage = require('storage');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 

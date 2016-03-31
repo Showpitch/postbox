@@ -1,6 +1,6 @@
 
 import { EventAggregator } from 'aurelia-event-aggregator';
-import { Storage } from 'Showpitch/storage';
+import { Storage } from 'storage';
 export let PostBox = class PostBox {
   constructor() {
     this.eventAggregator = new EventAggregator();

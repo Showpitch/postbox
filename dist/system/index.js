@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['aurelia-event-aggregator', 'Showpitch/storage'], function (_export, _context) {
+System.register(['aurelia-event-aggregator', 'storage'], function (_export, _context) {
   var EventAggregator, Storage, PostBox;
 
   function _classCallCheck(instance, Constructor) {
@@ -12,8 +12,8 @@ System.register(['aurelia-event-aggregator', 'Showpitch/storage'], function (_ex
   return {
     setters: [function (_aureliaEventAggregator) {
       EventAggregator = _aureliaEventAggregator.EventAggregator;
-    }, function (_ShowpitchStorage) {
-      Storage = _ShowpitchStorage.Storage;
+    }, function (_storage) {
+      Storage = _storage.Storage;
     }],
     execute: function () {
       _export('PostBox', PostBox = function () {
